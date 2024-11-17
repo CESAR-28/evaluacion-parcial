@@ -1,1 +1,47 @@
-<p>ejercicio3 works!</p>
+<h2 class="text-center my-4">Promedio de Calificaciones</h2>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      
+      <div class="form-group mb-3">
+        <label for="calificacion1" class="form-label">Calificación 1:</label>
+        <input
+          type="number"
+          id="calificacion1"
+          class="form-control"
+          [(ngModel)]="calificaciones[0]"
+          placeholder="Ingrese la calificación 1"
+        />
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="calificacion2" class="form-label">Calificación 2:</label>
+        <input
+          type="number"
+          id="calificacion2"
+          class="form-control"
+          [(ngModel)]="calificaciones[1]"
+          placeholder="Ingrese la calificación 2"
+        />
+      </div>
+   
+      <div class="form-group mb-3">
+        <label for="calificacion3" class="form-label">Calificación 3:</label>
+        <input
+          type="number"
+          id="calificacion3"
+          class="form-control"
+          [(ngModel)]="calificaciones[2]"
+          placeholder="Ingrese la calificación 3"
+        />
+      </div>
+
+      <button class="btn btn-primary w-100" (click)="verificarAprobacion()">Verificar</button>
+
+      <p class="mt-3 text-center fw-bold">{{ resultado }}</p>
+    </div>
+  </div>
+</div>
+
+
