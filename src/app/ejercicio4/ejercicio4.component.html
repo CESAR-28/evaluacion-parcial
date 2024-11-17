@@ -1,1 +1,22 @@
-<p>ejercicio4 works!</p>
+<h2 class="text-center my-4">Números Perfectos</h2>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="form-group mb-3">
+        <label for="limite" class="form-label">Ingrese el límite:</label>
+        <input
+          type="number"
+          id="limite"
+          class="form-control no-spinner"
+          [(ngModel)]="limite"
+          placeholder="Ingrese un número límite"
+        />
+      </div>
+      <button class="btn btn-info w-100" (click)="verificarNumerosPerfectos()">Verificar</button>
+      <pre class="mt-3 p-3 bg-light border rounded">{{ resultado }}</pre>
+    </div>
+  </div>
+</div>
+
+
