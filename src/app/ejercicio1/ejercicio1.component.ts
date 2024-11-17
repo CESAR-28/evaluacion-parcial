@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './ejercicio1.component.css'
 })
 export class Ejercicio1Component {
-
+  tipoVehiculo: string = '';
+  tasaAlcohol: number = 0;
+  mensaje: string = '';
 }
